@@ -1,0 +1,279 @@
+{
+  "identity": {
+    "name": "Yvain",
+    "lastName": "Liechti",
+    "jobTitle": "Développeur Front-End",
+    "birthDate": "1988-10-26",
+    "nationality": "française",
+    "address": {
+      "streetAddress": "2 rue du docteur Vaillant",
+      "postalCode": "78210",
+      "addressLocality": "Saint Cyr L’École"
+    },
+    "telephone": "+33633838157",
+    "email": "ryuran@gmail.com"
+  },
+  "formations": [
+    {
+      "year"  : "2010",
+      "title" : "Niveau Licence professionnelle - <abbr title=\"Programmation en environnement réparti\">PER</abbr>",
+      "place" : "IUT d’Orsay (91)"
+    },
+    {
+      "year"  : "2009",
+      "title" : "DUT Informatique",
+      "place" : "IUT d’Orsay (91)"
+    },
+    {
+      "year"  : "2007",
+      "title" : "Baccalauréat scientifique",
+      "place" : "Lycée St Joseph à Bressuire (79)"
+    }
+  ],
+  "languagesInfo": [
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "Scss"
+  ],
+  "tools": [
+    "Sublime Text",
+    "Git",
+    "Gulp",
+    "Sass",
+    "Handlebars",
+    "jQuery"
+  ],
+  "languages": [{
+    "lang": "Anglais",
+    "level": "courant"
+  }],
+  "xp": [
+    {
+      "date": {
+        "format": "Juin 2013 à aujourd’hui",
+        "time": ""
+      },
+      "role": "Intégrateur web",
+      "company": "Clever Age",
+      "place": "Paris",
+      "missions": [
+        {
+          "title": "Intégration dans le domaine de la presse :",
+          "misions": [
+            "Refonte responsive d’un site de presse en Symfony3.",
+            "Refactorisation, réorganisation et documentation des composants Twig et Stylus.",
+            "Maintenance, évolution et documentation du framwork <abbr lang=\"en\" title=\"User Interface\">UI</abbr> maison.",
+            "Mise en place d’optimisation des images responsives avec <code>&lt;picture&gt;</code>, <code>srcset</code> et <code>sizes</code>."
+          ]
+        },{
+          "title": "Intégration dans le domaine du luxe :",
+          "missions": [
+            "Refonte graphique d’une webapp du personalisation de sac à main en Backbone",
+            "Maquettes statiques pour site e-commerce international CQ/Hybris.",
+            "Minisites présentant une gamme de produit.",
+            "Reprise des évolution Front-end d’un site e-commerce international CQ/ATG."
+          ]
+        },{
+          "title": "Intégration dans le domaine des assurance :",
+          "missions": [
+            "Maquettes statiques pour site intitutionel.",
+            "Template Drupal7 pour site institutionel."
+          ]
+        },{
+          "title": "Autre projets clients :",
+          "missions": [
+            "Maquettes statiques.",
+            "Template Drupal7.",
+            "WebApp angular."
+          ]
+        },{
+          "title": "En interne :",
+          "missions": [
+            "Participation à l’élabortation d’un starterkit pour génération des maquettes statiques.",
+            "Mise en place de styleguide auto-générées à partir des commentaires dans le code-source grâce à kss-node"
+          ]
+        }
+      ],
+      "tools": [
+        "Sublime Text",
+        "Photoshop",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "Less",
+        "Sass",
+        "jQuery",
+        "handlebars",
+        "grunt",
+        "linters"
+      ]
+    },{
+      "date": {
+        "format": "Février 2013 à Juin 2013",
+        "time": ""
+      },
+      "role": "Développeur Front-End",
+      "company": "LeGuide.com",
+      "place": "Paris",
+      "missions": [
+        "Refonte du site mobile orienté performance : vitesse de chargement, vitesse de rendu.",
+        "Adaptation des sites à la navigation tactile.",
+        "Maintenance et refonte d’éléments des sites (sous Symfony1.4 et Symfony2) en Twig ou Smarty selon les projets."
+      ],
+      "tools": [
+        "Sublime Text",
+        "Photoshop",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "PHP",
+        "Twig",
+        "Smarty",
+        "Less",
+        "jQuery."
+      ]
+    },{
+      "date": {
+        "format": "Décembre 2011 à Février 2013",
+        "time": ""
+      },
+      "role": "Intégrateur Web",
+      "company": "Neteden",
+      "place": "Aix en Provence",
+      "missions": [
+        "Intégration de templates Twig pour différents projets Symfony2.",
+        "Découpage et intégration campagnes d’e-mailing et de pages d’opérations publicitaires.",
+        "Intégration de sites web pour smartphones et périphériques mobiles."
+      ],
+      "tools": [
+        "Sublime Text",
+        "Photoshop",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "PHP",
+        "Twig",
+        "Less",
+        "jQuery",
+        "Litmus"
+      ]
+    },{
+      "date": {
+        "format": "Juillet à septembre 2011",
+        "time": ""
+      },
+      "role": "Développeur Web",
+      "company": "B2Pweb",
+      "place": "Cavaillon",
+      "missions": [
+        "Développement sur le site client.",
+        "Réorganisation ergonomique des formulaires de saisie.",
+      ],
+      "tools": [
+        "Netbeans",
+        "Notepad++",
+        "PHP",
+        "Zend",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "jQuery"
+      ]
+    },{
+      "date": {
+        "format": "Mars à juin 2011",
+        "time": ""
+      },
+      "role": "Développeur Web",
+      "company": "Scan’Eco",
+      "place": "Avignon",
+      "missions": [
+        "Programmation de modules pour le site client et intranet.",
+        "Programmation de scripts Perl et Python."
+      ],
+      "tools": [
+        "Eclipse",
+        "Notepad++",
+        "MySQL",
+        "PHP",
+        "(x)HTML",
+        "CSS2.1",
+        "Perl",
+        "Python",
+        "Javascript",
+        "jQuery"
+      ]
+    },{
+      "date": {
+        "format": "Septembre 2009 à septembre 2010",
+        "time": ""
+      },
+      "role": "Intégrateur Web",
+      "company": "Brainsonic",
+      "place": "Paris",
+      "status": "apprentissage",
+      "missions": [
+          "Intégration de pages web pour des lives (événements diffusés en vidéo en direct via internet), webTV, blogs, newsletters, emailings, web mobile.",
+      ],
+      "tools": [
+        "Notepad++",
+        "Aptana",
+        "Photoshop",
+        "Wordpress",
+        "MySQL",
+        "PHP",
+        "xHTML",
+        "HTML5",
+        "CSS2.1",
+        "CSS3",
+        "Litmus",
+        "Javascript",
+        "jQuery"
+      ]
+    },{
+      "date": {
+        "format": "Avril à juillet 2009",
+        "time": ""
+      },
+      "role": "Intégrateur Web",
+      "company": "Orange - FTgroup",
+      "place": "Guyancourt/Paris",
+      "status": "stage de fin d’étude",
+      "missions": [
+        "Création, administration et maintenance sur les sites intranet « entité » et « métier ».",
+        "Création et gestion de tous les outils multimédia : wikis, blogs, newsletters, emailings, inscriptions en ligne, sondages, conférences téléphoniques pilotées, infographie, ergonomie."
+      ]
+    },{
+      "date": {
+        "format": "Juillet à août 2007",
+        "time": ""
+      },
+      "role": "Animateur du site web ParisBrestParis.tv",
+      "company": "TVfil78",
+      "place": "Guyancourt",
+      "missions": [
+        "Mise en ligne quotidienne d’articles.",
+        "Maintenance du site."
+      ]
+    },{
+      "date": {
+        "format": "Juin 2005",
+        "time": ""
+      },
+      "role": "Stagiaire",
+      "company": "France Télécom / SICOR",
+      "place": "Guyancourt",
+      "missions": [
+        "Initiation aux problèmatiques d’accessibilité des sites web à tous et découverte des divers handicaps face à leurs utilisations.",
+        "Première approche du CMS SPIP : développement de filtres pour SPIP en PHP.",
+        "Réalisation de maquettes de sites en HTML et CSS."
+      ]
+    }
+  ],
+  "hobbies": [
+    "Danses latines (Salsa, Bachata, Kizomba)",
+    "Badminton",
+    "Dessin"
+  ]
+}
