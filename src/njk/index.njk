@@ -1,0 +1,106 @@
+{% extends './layouts/main.njk' %}
+
+{% block jsonld %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "{{ identity.name }} {{ identity.lastName }}",
+  "jobTitle": "{{ identity.jobTitle }}",
+  "birthDate": "{{ identity.birthDate }}",
+  "nationality": "{{ identity.nationality }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ identity.address.streetAddress }}",
+    "postalCode": "{{ identity.address.postalCode }}",
+    "addressLocality": "{{ identity.address.addressLocality }}"
+  },
+  "telephone": "{{ identity.telephone.raw }}",
+  "email": "{{ identity.email }}"
+}
+</script>
+{% endblock %}
+
+{% block content %}
+  <header class="block layout-header">
+    <h1>{{ identity.name }} {{ identity.lastName }}</h1>
+    <p>{{ identity.jobTitle }}</p>
+  </header>
+  <div class="block layout-infos">
+    <ul class="status">
+      <li>Né le <time datetime="{{ identity.birthDate }}">{{ identity.birthDate|date('DD/MM/YYYY') }} ({{ identity.birthDate|date('fromNow', true)|replace('years', 'ans') }})</time></li>
+      <li>Nationalité {{ identity.nationality }}</li>
+    </ul>
+    <ul class="contact">
+      <li class="contact-adress">
+        {{ identity.address.streetAddress }} – {{ identity.address.postalCode }} {{ identity.address.addressLocality }}
+      </li>
+      <li class="contact-tel">
+        <abbr title="Téléphone portable">Tél</abbr> : <a class="link" href="tel:{{ identity.telephone.raw }}">{{ identity.telephone.formated }}</a>
+      </li>
+      <li class="contact-email">
+        E-mail : <a class="link" title="Envoyez moi un e-mail" href="mailto:{{ identity.email }}">{{ identity.email }}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="block layout-graduate">
+    <h2>Formation</h2>
+    {% for formation in formations %}
+      <div class="formation">
+        <h3><time class="date" datetime="{{ formation.year }}">{{ formation.year }}</time> {{ formation.title|safe }}</h3>
+        <p class="graduatePlace">{{ formation.place }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="block layout-xp">
+    <h2>Expérience professionnelle</h2>
+    {% for item in xp %}
+      <div>
+        <h3>
+          <time class="date" datetime="{{ item.date.time }}">{{ item.date.format }}</time>
+          {{ item.role }}
+          <span class="more">({{ item.company }})</span>
+        </h3>
+        <ul>
+          {% for mission in item.missions %}
+            <li>{% if mission.title %}{{ mission.title }}{% else %}{{ mission }}{% endif %}
+              {% if mission.missions %}
+                <ul>
+                  {% for mission in mission.missions %}
+                    <li>{{ mission|safe }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% if item.tools %}
+          <p class="tools">Langages et outils : {{ item.tools|join(', ') }}.</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="block layout-skills">
+    <h2>Langages et outils préférés</h2>
+    <ul>
+      <li><strong>Langages :</strong> {{ languagesInfo|join(', ') }}</li>
+      <li><strong>Outils :</strong> {{ tools|join(', ') }}</li>
+    </ul>
+  </div>
+  <div class="block layout-languages">
+    <h2>Connaissance Linguistique</h2>
+    <ul>
+      {% for language in languages %}
+        <li>{{ language.lang }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="block layout-activities">
+    <h2>Activités extra&shy;professionnelles</h2>
+    <ul>
+      {% for hobby in hobbies %}
+        <li>{{ hobby }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

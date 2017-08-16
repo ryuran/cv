@@ -1,0 +1,10 @@
+/* patua-one-regular - latin */
+@font-face {
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src:  local('Patua One'),
+        local('PatuaOne-Regular'),
+        url('../fonts/patua-one/patua-one-regular.woff2') format('woff2'),
+        url('../fonts/patua-one/patua-one-regular.woff') format('woff');
+}

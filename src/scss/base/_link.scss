@@ -1,0 +1,14 @@
+a {
+  &:link {
+    transition: color 0.3s ease-in;
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-viking;
+  }
+
+  &:hover,
+  &:focus {
+    color: lighten($color-viking, 10%);
+    text-decoration: underline;
+  }
+}

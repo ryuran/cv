@@ -1,0 +1,16 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(.9rem + .5vw);
+  line-height: $lh;
+}
+
+body {
+  background: $color-black;
+  color: $color-grey;
+  font-family: $font-regular;
+}

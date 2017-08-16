@@ -1,0 +1,5 @@
+$_breakpoints: (s: 25em, m: 45em, l: 60em);
+
+$mq-from-s: screen and (min-width: #{map-get($_breakpoints, s)});
+$mq-from-m: screen and (min-width: #{map-get($_breakpoints, m)});
+$mq-from-l: screen and (min-width: #{map-get($_breakpoints, l)});
