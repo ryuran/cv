@@ -36,7 +36,7 @@ function newFile(dest, content) {
   });
 }
 
-const dist = './docs/';
+const dist = './dist/';
 const temp = './.tmp/';
 
 // Clean

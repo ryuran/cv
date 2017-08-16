@@ -4,7 +4,7 @@
   "description": "Yvain Liechti – CV",
   "main": "builder.js",
   "scripts": {
-    "post-install": "babel-node tools/run build",
+    "install": "./node_modules/.bin/babel-node tools/run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
