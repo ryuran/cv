@@ -1,0 +1,14 @@
+.date {
+  display: block;
+  font-size: 0.7em;
+  font-family: $font-regular;
+  font-style: italic;
+
+  @media #{$mq-from-m} {
+    display: inline-block;
+
+    &:after {
+      content: ' :'
+    }
+  }
+}

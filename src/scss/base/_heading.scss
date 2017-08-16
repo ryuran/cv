@@ -1,0 +1,26 @@
+h1,
+h2,
+h3 {
+  font-family: $font-heading;
+  font-weight: normal;
+  color: $color-viking;
+  text-shadow: .05rem .05rem .1rem $color-dark;
+}
+
+h1 {
+  font-size: ms(6);
+  line-height: $lh * 2;
+  margin: 1.5rem 0;
+}
+
+h2 {
+  font-size: ms(3);
+  line-height: $lh * 1.5;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: ms(2);
+  line-height: $lh * 1.25;
+  margin: .75rem 0;
+}

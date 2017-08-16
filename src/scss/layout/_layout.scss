@@ -1,0 +1,46 @@
+.layout {
+  display: grid;
+  margin: 0 auto;
+  max-width: 75rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "infos" "xp" "graduate" "skills" "languages" "activities";
+
+  @media #{$mq-from-m} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header infos" "graduate graduate" "xp xp" "skills skills" "languages activities";
+  }
+
+  @media #{$mq-from-l} {
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "header header infos" "graduate xp xp" "skills xp xp" "languages xp xp" "activities xp xp";
+  }
+
+  &-header {
+    grid-area: header;
+  }
+
+  &-infos {
+    grid-area: infos;
+  }
+
+  &-graduate {
+    grid-area: graduate;
+  }
+
+  &-xp {
+    grid-area: xp;
+  }
+
+  &-skills {
+    grid-area: skills;
+  }
+
+  &-languages {
+    grid-area: languages;
+  }
+
+  &-activities {
+    grid-area: activities;
+  }
+}

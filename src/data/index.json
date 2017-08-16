@@ -6,11 +6,14 @@
     "birthDate": "1988-10-26",
     "nationality": "française",
     "address": {
-      "streetAddress": "2 rue du docteur Vaillant",
-      "postalCode": "78210",
-      "addressLocality": "Saint Cyr L’École"
+      "streetAddress": "16 rue Gabriel Péri",
+      "postalCode": "78220",
+      "addressLocality": "Viroflay"
     },
-    "telephone": "+33633838157",
+    "telephone": {
+      "raw": "+33633838157",
+      "formated": "06 33 83 81 57"
+    },
     "email": "ryuran@gmail.com"
   },
   "formations": [
@@ -37,7 +40,7 @@
     "Scss"
   ],
   "tools": [
-    "Sublime Text",
+    "VScode",
     "Git",
     "Gulp",
     "Sass",
@@ -52,7 +55,7 @@
     {
       "date": {
         "format": "Juin 2013 à aujourd’hui",
-        "time": ""
+        "time": "2013-06/"
       },
       "role": "Intégrateur web",
       "company": "Clever Age",
@@ -60,11 +63,18 @@
       "missions": [
         {
           "title": "Intégration dans le domaine de la presse :",
-          "misions": [
+          "missions": [
             "Refonte responsive d’un site de presse en Symfony3.",
             "Refactorisation, réorganisation et documentation des composants Twig et Stylus.",
-            "Maintenance, évolution et documentation du framwork <abbr lang=\"en\" title=\"User Interface\">UI</abbr> maison.",
+            "Maintenance, évolution et documentation du framework <abbr lang=\"en\" title=\"User Interface\">UI</abbr> maison.",
             "Mise en place d’optimisation des images responsives avec <code>&lt;picture&gt;</code>, <code>srcset</code> et <code>sizes</code>."
+          ]
+        },
+        {
+          "title": "Intégration dans le domaine de la grande distribution :",
+          "missions": [
+            "Refonte responsive d’un site éditorial.",
+            "Mise en place d’outils d’intégration comme Grunt, Sass, Kss"
           ]
         },{
           "title": "Intégration dans le domaine du luxe :",
@@ -96,6 +106,7 @@
         }
       ],
       "tools": [
+        "VScode",
         "Sublime Text",
         "Photoshop",
         "HTML5",
@@ -111,7 +122,7 @@
     },{
       "date": {
         "format": "Février 2013 à Juin 2013",
-        "time": ""
+        "time": "2013-02/2013-06"
       },
       "role": "Développeur Front-End",
       "company": "LeGuide.com",
@@ -131,12 +142,12 @@
         "Twig",
         "Smarty",
         "Less",
-        "jQuery."
+        "jQuery"
       ]
     },{
       "date": {
         "format": "Décembre 2011 à Février 2013",
-        "time": ""
+        "time": "2011-12/2013-02"
       },
       "role": "Intégrateur Web",
       "company": "Neteden",
@@ -161,14 +172,14 @@
     },{
       "date": {
         "format": "Juillet à septembre 2011",
-        "time": ""
+        "time": "2011-07/2011-09"
       },
       "role": "Développeur Web",
       "company": "B2Pweb",
       "place": "Cavaillon",
       "missions": [
         "Développement sur le site client.",
-        "Réorganisation ergonomique des formulaires de saisie.",
+        "Réorganisation ergonomique des formulaires de saisie."
       ],
       "tools": [
         "Netbeans",
@@ -183,7 +194,7 @@
     },{
       "date": {
         "format": "Mars à juin 2011",
-        "time": ""
+        "time": "2011-03/2011-06"
       },
       "role": "Développeur Web",
       "company": "Scan’Eco",
@@ -207,14 +218,14 @@
     },{
       "date": {
         "format": "Septembre 2009 à septembre 2010",
-        "time": ""
+        "time": "2009-09/2010-09"
       },
       "role": "Intégrateur Web",
       "company": "Brainsonic",
       "place": "Paris",
       "status": "apprentissage",
       "missions": [
-          "Intégration de pages web pour des lives (événements diffusés en vidéo en direct via internet), webTV, blogs, newsletters, emailings, web mobile.",
+        "Intégration de pages web pour des lives (événements diffusés en vidéo en direct via internet), webTV, blogs, newsletters, emailings, web mobile."
       ],
       "tools": [
         "Notepad++",
@@ -234,7 +245,7 @@
     },{
       "date": {
         "format": "Avril à juillet 2009",
-        "time": ""
+        "time": "2009-04/2010-07"
       },
       "role": "Intégrateur Web",
       "company": "Orange - FTgroup",
@@ -247,7 +258,7 @@
     },{
       "date": {
         "format": "Juillet à août 2007",
-        "time": ""
+        "time": "2007-07/2007-08"
       },
       "role": "Animateur du site web ParisBrestParis.tv",
       "company": "TVfil78",
@@ -273,7 +284,6 @@
   ],
   "hobbies": [
     "Danses latines (Salsa, Bachata, Kizomba)",
-    "Badminton",
-    "Dessin"
+    "Brassage amateur"
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "name": "ryuran-cv",
+  "version": "1.0.0",
+  "description": "Yvain Liechti – CV",
+  "main": "builder.js",
+  "scripts": {
+    "post-install": "babel-node tools/run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryuran/cv.git"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "Yvain Liechti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryuran/cv/issues"
+  },
+  "homepage": "https://github.com/ryuran/cv",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babel-types": "^6.25.0",
+    "cssnano": "^3.10.0",
+    "fs-extra": "^4.0.1",
+    "glob": "^7.1.2",
+    "http-server": "^0.10.0",
+    "modularscale-sass": "^3.0.3",
+    "node-sass": "^4.5.3",
+    "node-sass-import": "^1.1.1",
+    "normalize-scss": "^7.0.0",
+    "nunjucks": "^3.0.1",
+    "nunjucks-date": "^1.2.0",
+    "nunjucks-date-filter": "^0.1.1",
+    "postcss": "^6.0.9"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-async-to-generator"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "rewire"
+        ]
+      }
+    }
+  }
+}
