@@ -86,10 +86,9 @@ async function assets() {
 
 // html
 async function html() {
-  var indexTpl = 'index.njk';
-  var indexData = require('../src/data/index.json');
-  var dest = indexTpl.replace('.njk', '.html');
-  dest = path.join(dist, dest);
+  const indexTpl = 'index.njk';
+  const indexData = require('../src/data/index.json');
+  const dest = path.join(dist, indexTpl.replace('.njk', '.html'));
 
   newFile(dest, njkEnv.render(indexTpl, indexData));
 }
