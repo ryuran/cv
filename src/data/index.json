@@ -6,9 +6,9 @@
     "birthDate": "1988-10-26",
     "nationality": "française",
     "address": {
-      "streetAddress": "16 rue Gabriel Péri",
-      "postalCode": "78220",
-      "addressLocality": "Viroflay"
+      "streetAddress": "5 route de Couvrigny",
+      "postalCode": "14700",
+      "addressLocality": "Saint Pierre du Bû"
     },
     "telephone": {
       "raw": "+33633838157",
@@ -36,16 +36,14 @@
   "languagesInfo": [
     "HTML5",
     "CSS3",
-    "Javascript",
+    "JavaScript",
     "Scss"
   ],
   "tools": [
     "VScode",
     "Git",
-    "Gulp",
     "Sass",
-    "Handlebars",
-    "jQuery"
+    "Web components"
   ],
   "languages": [{
     "lang": "Anglais",
@@ -54,8 +52,38 @@
   "xp": [
     {
       "date": {
-        "format": "Juin 2013 à aujourd’hui",
-        "time": "2013-06/"
+        "format": "Mars 2020 à aujourd’hui",
+        "time": "2020-03/"
+      },
+      "role": "Développeur Design System",
+      "company": "Clever Age",
+      "place": "Remote",
+      "missions": [
+        {
+          "title": "Conception, maintenance de documentation d’un « design system »",
+          "missions": [
+            "Création de nouveaux composants.",
+            "Maintenance du design system.",
+            "Documentation du design system."
+          ]
+        }
+      ],
+      "tools": [
+        "VScode",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "Sass",
+        "StencilJS",
+        "Angular",
+        "React",
+        "Storybook"
+      ]
+    },
+    {
+      "date": {
+        "format": "Juin 2013 à mars 2020",
+        "time": "2013-06/2020-03"
       },
       "role": "Intégrateur web",
       "company": "Clever Age",
@@ -111,7 +139,7 @@
         "Photoshop",
         "HTML5",
         "CSS3",
-        "Javascript",
+        "JavaScript",
         "Less",
         "Sass",
         "jQuery",
@@ -121,7 +149,7 @@
       ]
     },{
       "date": {
-        "format": "Février 2013 à Juin 2013",
+        "format": "Février 2013 à juin 2013",
         "time": "2013-02/2013-06"
       },
       "role": "Développeur Front-End",
@@ -137,7 +165,7 @@
         "Photoshop",
         "HTML5",
         "CSS3",
-        "Javascript",
+        "JavaScript",
         "PHP",
         "Twig",
         "Smarty",
@@ -146,7 +174,7 @@
       ]
     },{
       "date": {
-        "format": "Décembre 2011 à Février 2013",
+        "format": "Décembre 2011 à février 2013",
         "time": "2011-12/2013-02"
       },
       "role": "Intégrateur Web",
@@ -162,7 +190,7 @@
         "Photoshop",
         "HTML5",
         "CSS3",
-        "Javascript",
+        "JavaScript",
         "PHP",
         "Twig",
         "Less",
@@ -188,7 +216,7 @@
         "Zend",
         "HTML5",
         "CSS3",
-        "Javascript",
+        "JavaScript",
         "jQuery"
       ]
     },{
@@ -212,7 +240,7 @@
         "CSS2.1",
         "Perl",
         "Python",
-        "Javascript",
+        "JavaScript",
         "jQuery"
       ]
     },{
@@ -239,7 +267,7 @@
         "CSS2.1",
         "CSS3",
         "Litmus",
-        "Javascript",
+        "JavaScript",
         "jQuery"
       ]
     },{
