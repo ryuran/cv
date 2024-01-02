@@ -1,6 +1,4 @@
-/*jslint node: true */
-/*jslint esversion: 6 */
-import run from './run';
+import { run } from './run.js';
 
 import glob from 'glob';
 import path from 'path';
@@ -9,8 +7,7 @@ import fs from 'fs-extra';
 import njk from 'nunjucks';
 import nunjucksDate from 'nunjucks-date-filter';
 
-import sass from 'node-sass';
-import sassImporter from 'node-sass-import';
+import * as sass from 'sass';
 
 import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
@@ -60,23 +57,15 @@ async function css() {
     const entry = path.relative('./src/scss', file);
     const dest = path.join(dist, 'css', entry.replace('.scss', '.css'));
 
-    sass.render({
-      file: file,
-      importer: sassImporter
-    }, function(err, result) {
-      if(err) {
-        return console.log(err);
-      }
+    const result = sass.compile(file);
 
-      // post css
-      postProcessor.process(result.css, { from: entry, to: dest })
+    postProcessor.process(result.css, { from: entry, to: dest })
       .then(result => {
           newFile(dest, result.css);
           if (result.map) {
             newFile(dest + '.map', result.map);
           }
       });
-    });
   });
 }
 
@@ -87,7 +76,9 @@ async function assets() {
 // html
 async function html() {
   const indexTpl = 'index.njk';
-  const indexData = require('../src/data/index.json');
+  const { default: indexData } = await import('../src/data/index.json', {
+    assert: { type: 'json' }
+  });
   const dest = path.join(dist, indexTpl.replace('.njk', '.html'));
 
   newFile(dest, njkEnv.render(indexTpl, indexData));
