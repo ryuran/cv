@@ -56,7 +56,7 @@
         "time": "2020-03/"
       },
       "role": "Développeur Design System",
-      "company": "Clever Age",
+      "company": "UKG",
       "place": "Remote",
       "missions": [
         {
@@ -64,7 +64,9 @@
           "missions": [
             "Création de nouveaux composants.",
             "Maintenance du design system.",
-            "Documentation du design system."
+            "Documentation du design system.",
+            "Mise en place de test automatisés",
+            "Mise en place de test de non-régression graphique"
           ]
         }
       ],
