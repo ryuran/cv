@@ -4,8 +4,9 @@
   "description": "Yvain Liechti – CV",
   "type": "module",
   "private": true,
+  "browserslist": ["> 1%"],
   "scripts": {
-    "install": "node ./tools/cli build",
+    "prepare": "node ./tools/cli build",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {

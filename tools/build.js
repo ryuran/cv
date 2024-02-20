@@ -1,6 +1,6 @@
 import { run } from './run.js';
 
-import glob from 'glob';
+import { globSync } from 'glob';
 import path from 'path';
 import fs from 'fs-extra';
 
@@ -34,26 +34,24 @@ function newFile(dest, content) {
 }
 
 const dist = './dist/';
-const temp = './.tmp/';
 
 // Clean
 async function clean() {
-  fs.removeSync(dist);
+  return fs.remove(dist);
 }
 
 // css
 async function css() {
-  const scssFiles= glob.sync('./src/scss/*.scss');
+  const scssFiles= globSync('./src/scss/*.scss');
 
   const postProcessor = postcss([
     autoprefixer({
       grid: true,
-      browsers: ['> 1%']
     }),
     cssnano
   ]);
 
-  scssFiles.forEach(function (file, index) {
+  scssFiles.forEach((file)  =>{
     const entry = path.relative('./src/scss', file);
     const dest = path.join(dist, 'css', entry.replace('.scss', '.css'));
 
@@ -70,7 +68,7 @@ async function css() {
 }
 
 async function assets() {
-  fs.copy('./src/assets', dist);
+  return fs.copy('./src/assets', path.join(dist, 'assets'));
 }
 
 // html
